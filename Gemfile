@@ -2,10 +2,11 @@
 
 source "https://rubygems.org"
 
-gem 'spyder', path: '/Users/ap/prj/spyder'
+gem 'spyder'
 gem 'pry-byebug'
 
+gem 'base64'
 gem 'oj'
 gem 'multi_json'
 
-# gem "rails"
+gem 'mongo'

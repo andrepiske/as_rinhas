@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    command:
+    - bundle
+    - exec
+    - ruby
+    - /app/server.rb
+    ports:
+    - "8080"
