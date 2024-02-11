@@ -2,8 +2,7 @@
 
 source "https://rubygems.org"
 
-gem 'spyder'
-gem 'pry-byebug'
+gem 'spyder', '~> 0.1.1'
 
 gem 'base64'
 gem 'oj'

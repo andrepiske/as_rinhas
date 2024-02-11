@@ -1,9 +1,10 @@
+#!/usr/bin/env ruby
 # frozen_string_literal: true
 require 'spyder'
 require 'oj'
 require 'multi_json'
 
-require 'pry-byebug'
+# require 'pry-byebug'
 
 require_relative './db.rb'
 

@@ -11,8 +11,9 @@ WORKDIR /app
 
 ADD --chown=app Gemfile /app/
 ADD --chown=app Gemfile.lock /app/
-ADD --chown=app third-party /third-party
+
+RUN set -eux ; \
+    bundle config set deployment true ; \
+    bundle install
 
 ADD --chown=app app /app/
-
-RUN bundle install

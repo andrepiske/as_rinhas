@@ -13,5 +13,5 @@ export default function () {
   const cid = Math.floor(Math.random() * 5) + 1;
 
   const headers = { 'Content-Type': 'application/json' };
-  http.post(`http://localhost:8080/clientes/${cid}/transacoes`, payload, { headers });
+  http.post(`http://lb:9999/clientes/${cid}/transacoes`, payload, { headers });
 }

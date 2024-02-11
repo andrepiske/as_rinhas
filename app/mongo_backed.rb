@@ -7,7 +7,9 @@ module RinhaDB
     attr_reader :customers
 
     def initialize
-      @client = Mongo::Client.new(['127.0.0.1:27017'], database: 'rinha')
+      # @client = Mongo::Client.new(['127.0.0.1:27017'], database: 'rinha')
+
+      @client = Mongo::Client.new(['db:27017'], database: 'rinha')
       @db = @client.database
 
       if ENV['DB_RESET'] == '1'
